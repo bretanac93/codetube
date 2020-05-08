@@ -1,0 +1,5 @@
+rootProject.name = 'codetube'
+
+include 'apps'
+include 'src:backoffice'
+include 'src:shared'

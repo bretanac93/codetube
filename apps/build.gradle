@@ -1,0 +1,7 @@
+apply plugin: 'application'
+
+mainClassName = 'com.bretanac93.Starter'
+
+dependencies {
+    compile project(":src:backoffice")
+}
