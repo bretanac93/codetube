@@ -33,6 +33,12 @@ allprojects {
         testAnnotationProcessor "org.projectlombok:lombok:1.18.12"
     }
 
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR4"
+        }
+    }
+
     test {
         useJUnitPlatform()
 
