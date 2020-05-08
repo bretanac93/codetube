@@ -1,4 +1,8 @@
-.PHONY: all build test ping-mysql
+.PHONY: init all build test ping-mysql
+
+init:
+	test ! -f .env && cp .env.dist .env ;\
+	test ! -f apps/main/resources/.env && cp apps/main/resources/.env.dist apps/main/resources/.env
 
 all: build
 
